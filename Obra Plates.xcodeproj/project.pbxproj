@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8411D58921D5E51400ABA63A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D58821D5E51400ABA63A /* AppDelegate.swift */; };
+		8411D58B21D5E51400ABA63A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D58A21D5E51400ABA63A /* ViewController.swift */; };
+		8411D58E21D5E51400ABA63A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411D58C21D5E51400ABA63A /* Main.storyboard */; };
+		8411D59021D5E51600ABA63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411D58F21D5E51600ABA63A /* Assets.xcassets */; };
+		8411D59321D5E51600ABA63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411D59121D5E51600ABA63A /* LaunchScreen.storyboard */; };
+		8411D59E21D5E51600ABA63A /* Obra_PlatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D59D21D5E51600ABA63A /* Obra_PlatesTests.swift */; };
+		8411D5A921D5E51600ABA63A /* Obra_PlatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D5A821D5E51600ABA63A /* Obra_PlatesUITests.swift */; };
+		8411D5AE21D5E51600ABA63A /* Obra Plates WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8411D5AD21D5E51600ABA63A /* Obra Plates WatchKit App.app */; };
+		8411D5B421D5E51600ABA63A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8411D5B221D5E51600ABA63A /* Interface.storyboard */; };
+		8411D5B621D5E51700ABA63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411D5B521D5E51700ABA63A /* Assets.xcassets */; };
+		8411D5BD21D5E51700ABA63A /* Obra Plates WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8411D5BC21D5E51700ABA63A /* Obra Plates WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8411D5C221D5E51700ABA63A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D5C121D5E51700ABA63A /* InterfaceController.swift */; };
+		8411D5C421D5E51700ABA63A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D5C321D5E51700ABA63A /* ExtensionDelegate.swift */; };
+		8411D5C621D5E51700ABA63A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D5C521D5E51700ABA63A /* NotificationController.swift */; };
+		8411D5C821D5E51700ABA63A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411D5C721D5E51700ABA63A /* ComplicationController.swift */; };
+		8411D5CA21D5E51800ABA63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8411D5C921D5E51800ABA63A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8411D59A21D5E51600ABA63A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8411D57D21D5E51400ABA63A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8411D58421D5E51400ABA63A;
+			remoteInfo = "Obra Plates";
+		};
+		8411D5A521D5E51600ABA63A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8411D57D21D5E51400ABA63A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8411D58421D5E51400ABA63A;
+			remoteInfo = "Obra Plates";
+		};
+		8411D5AF21D5E51600ABA63A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8411D57D21D5E51400ABA63A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8411D5AC21D5E51600ABA63A;
+			remoteInfo = "Obra Plates WatchKit App";
+		};
+		8411D5BE21D5E51700ABA63A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8411D57D21D5E51400ABA63A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8411D5BB21D5E51700ABA63A;
+			remoteInfo = "Obra Plates WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8411D5D221D5E51800ABA63A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8411D5BD21D5E51700ABA63A /* Obra Plates WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5D621D5E51800ABA63A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8411D5AE21D5E51600ABA63A /* Obra Plates WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8411D58521D5E51400ABA63A /* Obra Plates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obra Plates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411D58821D5E51400ABA63A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8411D58A21D5E51400ABA63A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8411D58D21D5E51400ABA63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8411D58F21D5E51600ABA63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8411D59221D5E51600ABA63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8411D59421D5E51600ABA63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8411D59921D5E51600ABA63A /* Obra PlatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Obra PlatesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411D59D21D5E51600ABA63A /* Obra_PlatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obra_PlatesTests.swift; sourceTree = "<group>"; };
+		8411D59F21D5E51600ABA63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8411D5A421D5E51600ABA63A /* Obra PlatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Obra PlatesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411D5A821D5E51600ABA63A /* Obra_PlatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obra_PlatesUITests.swift; sourceTree = "<group>"; };
+		8411D5AA21D5E51600ABA63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8411D5AD21D5E51600ABA63A /* Obra Plates WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Obra Plates WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411D5B321D5E51600ABA63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8411D5B521D5E51700ABA63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8411D5B721D5E51700ABA63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8411D5BC21D5E51700ABA63A /* Obra Plates WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Obra Plates WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8411D5C121D5E51700ABA63A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8411D5C321D5E51700ABA63A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8411D5C521D5E51700ABA63A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8411D5C721D5E51700ABA63A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8411D5C921D5E51800ABA63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8411D5CB21D5E51800ABA63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8411D5CC21D5E51800ABA63A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8411D58221D5E51400ABA63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D59621D5E51600ABA63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5A121D5E51600ABA63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5B921D5E51700ABA63A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8411D57C21D5E51400ABA63A = {
+			isa = PBXGroup;
+			children = (
+				8411D58721D5E51400ABA63A /* Obra Plates */,
+				8411D59C21D5E51600ABA63A /* Obra PlatesTests */,
+				8411D5A721D5E51600ABA63A /* Obra PlatesUITests */,
+				8411D5B121D5E51600ABA63A /* Obra Plates WatchKit App */,
+				8411D5C021D5E51700ABA63A /* Obra Plates WatchKit Extension */,
+				8411D58621D5E51400ABA63A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8411D58621D5E51400ABA63A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8411D58521D5E51400ABA63A /* Obra Plates.app */,
+				8411D59921D5E51600ABA63A /* Obra PlatesTests.xctest */,
+				8411D5A421D5E51600ABA63A /* Obra PlatesUITests.xctest */,
+				8411D5AD21D5E51600ABA63A /* Obra Plates WatchKit App.app */,
+				8411D5BC21D5E51700ABA63A /* Obra Plates WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8411D58721D5E51400ABA63A /* Obra Plates */ = {
+			isa = PBXGroup;
+			children = (
+				8411D58821D5E51400ABA63A /* AppDelegate.swift */,
+				8411D58A21D5E51400ABA63A /* ViewController.swift */,
+				8411D58C21D5E51400ABA63A /* Main.storyboard */,
+				8411D58F21D5E51600ABA63A /* Assets.xcassets */,
+				8411D59121D5E51600ABA63A /* LaunchScreen.storyboard */,
+				8411D59421D5E51600ABA63A /* Info.plist */,
+			);
+			path = "Obra Plates";
+			sourceTree = "<group>";
+		};
+		8411D59C21D5E51600ABA63A /* Obra PlatesTests */ = {
+			isa = PBXGroup;
+			children = (
+				8411D59D21D5E51600ABA63A /* Obra_PlatesTests.swift */,
+				8411D59F21D5E51600ABA63A /* Info.plist */,
+			);
+			path = "Obra PlatesTests";
+			sourceTree = "<group>";
+		};
+		8411D5A721D5E51600ABA63A /* Obra PlatesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8411D5A821D5E51600ABA63A /* Obra_PlatesUITests.swift */,
+				8411D5AA21D5E51600ABA63A /* Info.plist */,
+			);
+			path = "Obra PlatesUITests";
+			sourceTree = "<group>";
+		};
+		8411D5B121D5E51600ABA63A /* Obra Plates WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8411D5B221D5E51600ABA63A /* Interface.storyboard */,
+				8411D5B521D5E51700ABA63A /* Assets.xcassets */,
+				8411D5B721D5E51700ABA63A /* Info.plist */,
+			);
+			path = "Obra Plates WatchKit App";
+			sourceTree = "<group>";
+		};
+		8411D5C021D5E51700ABA63A /* Obra Plates WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8411D5C121D5E51700ABA63A /* InterfaceController.swift */,
+				8411D5C321D5E51700ABA63A /* ExtensionDelegate.swift */,
+				8411D5C521D5E51700ABA63A /* NotificationController.swift */,
+				8411D5C721D5E51700ABA63A /* ComplicationController.swift */,
+				8411D5C921D5E51800ABA63A /* Assets.xcassets */,
+				8411D5CB21D5E51800ABA63A /* Info.plist */,
+				8411D5CC21D5E51800ABA63A /* PushNotificationPayload.apns */,
+			);
+			path = "Obra Plates WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8411D58421D5E51400ABA63A /* Obra Plates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8411D5D721D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra Plates" */;
+			buildPhases = (
+				8411D58121D5E51400ABA63A /* Sources */,
+				8411D58221D5E51400ABA63A /* Frameworks */,
+				8411D58321D5E51400ABA63A /* Resources */,
+				8411D5D621D5E51800ABA63A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8411D5B021D5E51600ABA63A /* PBXTargetDependency */,
+			);
+			name = "Obra Plates";
+			productName = "Obra Plates";
+			productReference = 8411D58521D5E51400ABA63A /* Obra Plates.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8411D59821D5E51600ABA63A /* Obra PlatesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8411D5DA21D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra PlatesTests" */;
+			buildPhases = (
+				8411D59521D5E51600ABA63A /* Sources */,
+				8411D59621D5E51600ABA63A /* Frameworks */,
+				8411D59721D5E51600ABA63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8411D59B21D5E51600ABA63A /* PBXTargetDependency */,
+			);
+			name = "Obra PlatesTests";
+			productName = "Obra PlatesTests";
+			productReference = 8411D59921D5E51600ABA63A /* Obra PlatesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8411D5A321D5E51600ABA63A /* Obra PlatesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8411D5DD21D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra PlatesUITests" */;
+			buildPhases = (
+				8411D5A021D5E51600ABA63A /* Sources */,
+				8411D5A121D5E51600ABA63A /* Frameworks */,
+				8411D5A221D5E51600ABA63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8411D5A621D5E51600ABA63A /* PBXTargetDependency */,
+			);
+			name = "Obra PlatesUITests";
+			productName = "Obra PlatesUITests";
+			productReference = 8411D5A421D5E51600ABA63A /* Obra PlatesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8411D5AC21D5E51600ABA63A /* Obra Plates WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8411D5D321D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra Plates WatchKit App" */;
+			buildPhases = (
+				8411D5AB21D5E51600ABA63A /* Resources */,
+				8411D5D221D5E51800ABA63A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8411D5BF21D5E51700ABA63A /* PBXTargetDependency */,
+			);
+			name = "Obra Plates WatchKit App";
+			productName = "Obra Plates WatchKit App";
+			productReference = 8411D5AD21D5E51600ABA63A /* Obra Plates WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8411D5BB21D5E51700ABA63A /* Obra Plates WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8411D5CF21D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra Plates WatchKit Extension" */;
+			buildPhases = (
+				8411D5B821D5E51700ABA63A /* Sources */,
+				8411D5B921D5E51700ABA63A /* Frameworks */,
+				8411D5BA21D5E51700ABA63A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Obra Plates WatchKit Extension";
+			productName = "Obra Plates WatchKit Extension";
+			productReference = 8411D5BC21D5E51700ABA63A /* Obra Plates WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8411D57D21D5E51400ABA63A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Obra Worldwide";
+				TargetAttributes = {
+					8411D58421D5E51400ABA63A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8411D59821D5E51600ABA63A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8411D58421D5E51400ABA63A;
+					};
+					8411D5A321D5E51600ABA63A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8411D58421D5E51400ABA63A;
+					};
+					8411D5AC21D5E51600ABA63A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8411D5BB21D5E51700ABA63A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8411D58021D5E51400ABA63A /* Build configuration list for PBXProject "Obra Plates" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8411D57C21D5E51400ABA63A;
+			productRefGroup = 8411D58621D5E51400ABA63A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8411D58421D5E51400ABA63A /* Obra Plates */,
+				8411D59821D5E51600ABA63A /* Obra PlatesTests */,
+				8411D5A321D5E51600ABA63A /* Obra PlatesUITests */,
+				8411D5AC21D5E51600ABA63A /* Obra Plates WatchKit App */,
+				8411D5BB21D5E51700ABA63A /* Obra Plates WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8411D58321D5E51400ABA63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D59321D5E51600ABA63A /* LaunchScreen.storyboard in Resources */,
+				8411D59021D5E51600ABA63A /* Assets.xcassets in Resources */,
+				8411D58E21D5E51400ABA63A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D59721D5E51600ABA63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5A221D5E51600ABA63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5AB21D5E51600ABA63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D5B621D5E51700ABA63A /* Assets.xcassets in Resources */,
+				8411D5B421D5E51600ABA63A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5BA21D5E51700ABA63A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D5CA21D5E51800ABA63A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8411D58121D5E51400ABA63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D58B21D5E51400ABA63A /* ViewController.swift in Sources */,
+				8411D58921D5E51400ABA63A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D59521D5E51600ABA63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D59E21D5E51600ABA63A /* Obra_PlatesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5A021D5E51600ABA63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D5A921D5E51600ABA63A /* Obra_PlatesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8411D5B821D5E51700ABA63A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D5C621D5E51700ABA63A /* NotificationController.swift in Sources */,
+				8411D5C821D5E51700ABA63A /* ComplicationController.swift in Sources */,
+				8411D5C421D5E51700ABA63A /* ExtensionDelegate.swift in Sources */,
+				8411D5C221D5E51700ABA63A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8411D59B21D5E51600ABA63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8411D58421D5E51400ABA63A /* Obra Plates */;
+			targetProxy = 8411D59A21D5E51600ABA63A /* PBXContainerItemProxy */;
+		};
+		8411D5A621D5E51600ABA63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8411D58421D5E51400ABA63A /* Obra Plates */;
+			targetProxy = 8411D5A521D5E51600ABA63A /* PBXContainerItemProxy */;
+		};
+		8411D5B021D5E51600ABA63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8411D5AC21D5E51600ABA63A /* Obra Plates WatchKit App */;
+			targetProxy = 8411D5AF21D5E51600ABA63A /* PBXContainerItemProxy */;
+		};
+		8411D5BF21D5E51700ABA63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8411D5BB21D5E51700ABA63A /* Obra Plates WatchKit Extension */;
+			targetProxy = 8411D5BE21D5E51700ABA63A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8411D58C21D5E51400ABA63A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8411D58D21D5E51400ABA63A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8411D59121D5E51600ABA63A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8411D59221D5E51600ABA63A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8411D5B221D5E51600ABA63A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8411D5B321D5E51600ABA63A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8411D5CD21D5E51800ABA63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8411D5CE21D5E51800ABA63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8411D5D021D5E51800ABA63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra Plates WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-Plates.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		8411D5D121D5E51800ABA63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra Plates WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-Plates.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		8411D5D421D5E51800ABA63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				IBSC_MODULE = Obra_Plates_WatchKit_Extension;
+				INFOPLIST_FILE = "Obra Plates WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-Plates.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		8411D5D521D5E51800ABA63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				IBSC_MODULE = Obra_Plates_WatchKit_Extension;
+				INFOPLIST_FILE = "Obra Plates WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-Plates.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		8411D5D821D5E51800ABA63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra Plates/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-Plates";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8411D5D921D5E51800ABA63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra Plates/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-Plates";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8411D5DB21D5E51800ABA63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra PlatesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-PlatesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Obra Plates.app/Obra Plates";
+			};
+			name = Debug;
+		};
+		8411D5DC21D5E51800ABA63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra PlatesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-PlatesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Obra Plates.app/Obra Plates";
+			};
+			name = Release;
+		};
+		8411D5DE21D5E51800ABA63A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra PlatesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-PlatesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Obra Plates";
+			};
+			name = Debug;
+		};
+		8411D5DF21D5E51800ABA63A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBHHC6VWZD;
+				INFOPLIST_FILE = "Obra PlatesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.obraworldwide.Obra-PlatesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Obra Plates";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8411D58021D5E51400ABA63A /* Build configuration list for PBXProject "Obra Plates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411D5CD21D5E51800ABA63A /* Debug */,
+				8411D5CE21D5E51800ABA63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8411D5CF21D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra Plates WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411D5D021D5E51800ABA63A /* Debug */,
+				8411D5D121D5E51800ABA63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8411D5D321D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra Plates WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411D5D421D5E51800ABA63A /* Debug */,
+				8411D5D521D5E51800ABA63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8411D5D721D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra Plates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411D5D821D5E51800ABA63A /* Debug */,
+				8411D5D921D5E51800ABA63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8411D5DA21D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra PlatesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411D5DB21D5E51800ABA63A /* Debug */,
+				8411D5DC21D5E51800ABA63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8411D5DD21D5E51800ABA63A /* Build configuration list for PBXNativeTarget "Obra PlatesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8411D5DE21D5E51800ABA63A /* Debug */,
+				8411D5DF21D5E51800ABA63A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8411D57D21D5E51400ABA63A /* Project object */;
+}
