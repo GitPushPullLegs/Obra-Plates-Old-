@@ -1,16 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Tag-->
+        <scene sceneID="a4e-hp-lww">
+            <objects>
+                <controller identifier="QRControllerID" title="Tag" contentMode="scaleAspectFill" fullScreen="YES" id="iVF-hH-0SX" customClass="QRController" customModule="Obra_Plates_WatchKit_Extension">
+                    <items>
+                        <imageView width="0.94999999999999996" height="0.94999999999999996" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="Mvp-44-QVd"/>
+                    </items>
+                    <menu key="menu" id="Zd8-ep-ugu">
+                        <items>
+                            <menuItem title="Adjust" icon="info" id="cF1-1V-JIM">
+                                <connections>
+                                    <action selector="adjustMenuSelected" destination="iVF-hH-0SX" id="JjE-Y3-JDC"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="imageView" destination="Mvp-44-QVd" id="Vf5-Sd-0hN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="99"/>
+        </scene>
+        <!--Plates-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="PlatesControllerID" title="Plates" contentMode="scaleAspectFill" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Obra_Plates_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="center" layout="vertical" spacing="2" id="ly2-EJ-cPx">
+                            <items>
+                                <group width="1" height="0.25" alignment="left" spacing="2" id="C8U-u4-MHl">
+                                    <items>
+                                        <picker width="0.75" height="1" alignment="left" focusStyle="stack" id="mU0-VH-UO6">
+                                            <connections>
+                                                <action selector="pickerChanged:" destination="AgC-eL-Hgc" id="9xS-5C-814"/>
+                                            </connections>
+                                        </picker>
+                                        <button width="0.25" height="1" alignment="left" title="Bar" id="1Bq-Xp-Ev6">
+                                            <color key="backgroundColor" red="0.015686274509803921" green="0.87058823529411766" blue="0.44313725490196076" alpha="0.14000000000000001" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="01Y-gt-g00" kind="modal" id="og2-l5-UCt"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.25" alignment="left" id="30N-38-Yhs">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="45 x 0" id="2Qt-HG-Qgx">
+                                            <connections>
+                                                <action selector="plate45Tapped" destination="AgC-eL-Hgc" id="bJ3-bb-I1g"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="35 x 0" id="UPN-d1-cR6">
+                                            <connections>
+                                                <action selector="plate35Tapped" destination="AgC-eL-Hgc" id="0rS-D4-QR8"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.25" alignment="left" id="kdW-YT-FcA">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="25 x 0" id="XQP-Zk-uU9">
+                                            <connections>
+                                                <action selector="plate25Tapped" destination="AgC-eL-Hgc" id="o53-pC-PxF"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="10 x 0" id="WZW-gt-9me">
+                                            <connections>
+                                                <action selector="plate10Tapped" destination="AgC-eL-Hgc" id="5DH-0z-Aga"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.25" alignment="left" id="9Oq-Sq-NBo">
+                                    <items>
+                                        <button width="0.5" height="1" alignment="left" title="5 x 0" id="jdv-x6-I0l">
+                                            <connections>
+                                                <action selector="plate5Tapped" destination="AgC-eL-Hgc" id="7KC-Za-5vd"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.5" height="1" alignment="left" title="2.5 x 0" id="IcR-M6-EIZ">
+                                            <connections>
+                                                <action selector="plate2p5Tapped" destination="AgC-eL-Hgc" id="7al-tf-rpN"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="Lh2-3a-29F">
+                        <items>
+                            <menuItem title="Check-In Tag" image="code" id="jpL-Cj-Yl7">
+                                <connections>
+                                    <action selector="qrMenuOptionSelected" destination="AgC-eL-Hgc" id="RXB-1D-AZR"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="barWeight" destination="1Bq-Xp-Ev6" id="HaK-gf-Ai6"/>
+                        <outlet property="plate05" destination="jdv-x6-I0l" id="Ic4-B0-Glz"/>
+                        <outlet property="plate10" destination="WZW-gt-9me" id="yxA-XW-4Z1"/>
+                        <outlet property="plate25" destination="XQP-Zk-uU9" id="o2p-6b-8th"/>
+                        <outlet property="plate2p5" destination="IcR-M6-EIZ" id="ffC-3d-nMU"/>
+                        <outlet property="plate35" destination="UPN-d1-cR6" id="Dl2-r6-xBf"/>
+                        <outlet property="plate45" destination="2Qt-HG-Qgx" id="9gL-Yj-5Mg"/>
+                        <outlet property="weightPicker" destination="mU0-VH-UO6" id="lK5-Ab-gM8"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="359.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,16 +143,47 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Obra_Plates_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Bar Weight-->
+        <scene sceneID="c8L-ds-SBI">
+            <objects>
+                <controller title="Bar Weight" spacing="2" id="01Y-gt-g00" customClass="BarWeightController" customModule="Obra_Plates_WatchKit_Extension">
+                    <items>
+                        <picker height="0.45000000000000001" alignment="left" focusStyle="stack" id="WPx-oC-U5h">
+                            <connections>
+                                <action selector="pickerChanged:" destination="01Y-gt-g00" id="Q1X-hb-y6p"/>
+                            </connections>
+                        </picker>
+                        <button width="1" height="0.25" alignment="left" verticalAlignment="bottom" title="Button" id="zuT-fV-wvp">
+                            <connections>
+                                <action selector="adjustButtonTapped" destination="01Y-gt-g00" id="UYl-BV-eni"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.25" alignment="left" verticalAlignment="bottom" title="Button" id="l5j-kH-Ebt">
+                            <connections>
+                                <action selector="cancelButtonTapped" destination="01Y-gt-g00" id="Phj-eH-khV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="adjustButton" destination="zuT-fV-wvp" id="4Hl-vR-mkg"/>
+                        <outlet property="barPicker" destination="WPx-oC-U5h" id="ynx-ag-nxF"/>
+                        <outlet property="cancelButton" destination="l5j-kH-Ebt" id="Mke-T6-7Xj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="99"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Obra_Plates_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
 </document>
